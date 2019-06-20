@@ -1,3 +1,9 @@
+# stuff for fast.ai
+export IMAGE_FAMILY="pytorch-latest-gpu" # or "pytorch-latest-cpu" for non-GPU instances
+export ZONE="us-west2-b" # budget: "us-west1-b"
+export INSTANCE_NAME="my-fastai-instance"
+export INSTANCE_TYPE="n1-highmem-8" # budget: "n1-highmem-4"
+
 # General
 alias c="clear"
 alias cl='printf "\033c"'
@@ -25,8 +31,9 @@ alias school="cd ~/Desktop/School/2b"
 alias gacs='git add -A && git commit -m "quick save" && git push'
 alias config="alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'"
 
-# School
+# SSH
 alias connect="ssh -Y ry2zhou@linux.student.cs.uwaterloo.ca"
+alias fastai="gcloud compute ssh --zone=$ZONE jupyter@$INSTANCE_NAME -- -L 8080:localhost:8080"
 
 # Docker
 alias dc="docker-compose"
@@ -46,5 +53,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 PATH="${HOME}/.scripts:${PATH}"
 PATH="/usr/local/bin:${PATH}"
 PATH="/Users/rockzhou/Library/Python/3.7/bin:${PATH}"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.cargo/bin:$PATH"

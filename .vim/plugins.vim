@@ -30,7 +30,7 @@ Plugin 'dylanaraps/wal'
 Plugin 'dylanaraps/wal.vim'
 
 " File Finding
-Plugin 'scrooloose/nerdtree' " file tree
+Plugin 'francoiscabrol/ranger.vim' " ranger integration
 Plugin 'junegunn/fzf' " idek it's useful
 Plugin 'junegunn/fzf.vim' " ^^^
 

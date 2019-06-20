@@ -66,7 +66,7 @@ nnoremap gdl :diffget //3<CR>
 
 " LEADER COMMANDS
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :Ranger<CR>
 nnoremap <leader>t :TableFormat<CR>
 nnoremap <leader>m :MarkdownPreview<CR>
 nnoremap <leader>f :Find 
