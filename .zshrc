@@ -11,6 +11,7 @@ antigen bundle command-not-found
 
 # syntax highlighting
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle "greymd/docker-zsh-completion"
 
 # vi highlighting
 antigen bundle vi-mode

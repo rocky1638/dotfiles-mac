@@ -42,6 +42,7 @@ Plugin 'tpope/vim-surround' " for surrounding with ys<motion><delimiter>
 Plugin 'scrooloose/nerdcommenter' " for commenting, use <leader>c<space>
 Plugin 'mattn/emmet-vim' " emmet
 Plugin 'easymotion/vim-easymotion'
+Plugin 'cohama/lexima.vim'
 Plugin 'takac/vim-hardtime' " timeout on basic motion keys
 
 " Note Taking

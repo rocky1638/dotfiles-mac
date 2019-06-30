@@ -21,6 +21,7 @@ alias ctags="/usr/local/Cellar/ctags/5.8_1/bin/ctags"
 alias lc="leetcode"
 alias tmux="TERM=tmux-256color THEME=\"$THEME\" tmux"
 alias sl="sl | lolcat"
+alias dk="docker"
 
 # Navigation Aliases:
 alias wks="cd ~/workstation"
