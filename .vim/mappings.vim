@@ -6,11 +6,6 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-" COMPLETION
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
 " MOVEMENT
 nnoremap j gj
 nnoremap k gk
@@ -18,7 +13,9 @@ nnoremap B ^
 nnoremap E $
 nnoremap <tab> %
 vnoremap <tab> %
+nnoremap ' `
 
+" indent with arrow keys
 nnoremap <left> <<
 nnoremap <right> >>
 vnoremap <Left> <gv
@@ -27,6 +24,10 @@ vnoremap <Right> >gv
 nnoremap H ^
 nnoremap J <C-d>
 nnoremap K <C-u>
+
+" searches center on screen
+nnoremap n nzz
+nnoremap N Nzz
 
 " EASYMOTION
 " f{char} to move to {char}
@@ -53,7 +54,7 @@ noremap <leader>z :tab split<CR>
 
 " FUGITIVE GIT BINDINGS
 nnoremap <leader>ga :Git add %:p<CR><CR>
-nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gs :Gtabedit :<CR>
 nnoremap <leader>gd :Gvdiff<CR>
 nnoremap <leader>gl :silent! Glog<CR>:bot copen<CR>
 nnoremap <leader>gb :Git branch<Space>
@@ -66,7 +67,6 @@ nnoremap gdl :diffget //3<CR>
 
 " LEADER COMMANDS
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <leader>n :Ranger<CR>
 nnoremap <leader>t :TableFormat<CR>
 nnoremap <leader>m :MarkdownPreview<CR>
 nnoremap <leader>f :Find 

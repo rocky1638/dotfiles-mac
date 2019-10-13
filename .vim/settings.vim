@@ -1,10 +1,10 @@
 " GENERAL VIM SETTINGS
 
 syntax on " enable syntax processing
-"let g:gruvbox_italic=1
-"let g:nord_italic=1
-"let g:nord_italic_comments = 1
-"let g:one_allow_italics = 1
+let g:nord_italic=1
+let g:nord_italic_comments = 1
+let g:nord_cursor_line_number_background = 1
+let g:nord_uniform_diff_background = 1
 
 if $THEME == "light"
   set background=light
@@ -12,7 +12,7 @@ else
   set background=dark
 endif
 
-colorscheme shades_of_purple
+colorscheme nord
 
 " force true colors to be on
 if exists('+termguicolors')

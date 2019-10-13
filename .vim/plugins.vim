@@ -26,11 +26,10 @@ Plugin 'morhetz/gruvbox'
 Plugin 'shinchu/lightline-gruvbox.vim'
 Plugin 'rakr/vim-one'
 Plugin 'Rigellute/shades-of-purple.vim'
-Plugin 'dylanaraps/wal'
-Plugin 'dylanaraps/wal.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " File Finding
-Plugin 'francoiscabrol/ranger.vim' " ranger integration
+Plugin 'tpope/vim-vinegar'
 Plugin 'junegunn/fzf' " idek it's useful
 Plugin 'junegunn/fzf.vim' " ^^^
 
@@ -51,10 +50,12 @@ Plugin 'plasticboy/vim-markdown' " everything markdown
 Plugin 'lervag/wiki.vim'
 Plugin 'iamcco/markdown-preview.nvim'
 
+" Autocomplete
+Plugin 'zxqfl/tabnine-vim'
+
 " Others
 Plugin 'mtth/scratch.vim' " scratchpad
 Plugin 'sheerun/vim-polyglot' " downloads a bunch of language info
-Plugin 'neoclide/coc.nvim' " intellisense
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'romainl/vim-devdocs'
 Plugin 'yuttie/comfortable-motion.vim' " comfortable scrolling

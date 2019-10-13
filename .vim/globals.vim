@@ -10,7 +10,7 @@ let g:ale_lint_on_text_changed=1
   let g:ale_linters = {
    \ 'javascript': ['eslint'],
    \ 'graphql': ['gqlint'],
-   \ 'python': ['pylama'],
+   \ 'python': ['pycodestyle'],
    \ }
 
   let g:ale_fixers = {
@@ -53,9 +53,9 @@ set conceallevel=2
 let g:wiki_root = '~/wiki'
 let g:wiki_filetypes=['md']
 
-let g:shades_of_purple_lightline=1
+"let g:shades_of_purple_lightline=1
 let g:lightline = {
-\  'colorscheme': 'shades_of_purple',
+\  'colorscheme': 'nord',
 \ 'component_function': {
 \   'filename': 'LightlineFilename',
 \   'gitbranch': 'LightLineGitbranch',

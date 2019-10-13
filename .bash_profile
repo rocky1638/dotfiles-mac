@@ -62,3 +62,5 @@ if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/path.bash.inc' ]; then . '
 if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
