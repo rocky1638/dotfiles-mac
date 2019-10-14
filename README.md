@@ -13,3 +13,5 @@ $$
 
 ## Screenshot:
 ![vim1](https://foodiy-beta.s3.amazonaws.com/nord.png)
+**Terminal:** iTerm2<br/>
+**Font:** Operator Mono
