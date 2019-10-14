@@ -53,14 +53,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Add user-created scripts to PATH
 PATH="${HOME}/.scripts:${PATH}"
 PATH="/usr/local/bin:${PATH}"
-PATH="/Users/rockzhou/Library/Python/3.7/bin:${PATH}"
+PATH="$HOME/Library/Python/3.7/bin:${PATH}"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '$/Users/rockzhou/workstation/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/rockzhou/workstation/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

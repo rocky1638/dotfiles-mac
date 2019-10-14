@@ -6,6 +6,13 @@ let g:nord_italic_comments = 1
 let g:nord_cursor_line_number_background = 1
 let g:nord_uniform_diff_background = 1
 
+" force true colors to be on
+if (has("termguicolors"))
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 if $THEME == "light"
   set background=light
 else
@@ -13,13 +20,6 @@ else
 endif
 
 colorscheme nord
-
-" force true colors to be on
-if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
-endif
 
 highlight Comment cterm=italic
 

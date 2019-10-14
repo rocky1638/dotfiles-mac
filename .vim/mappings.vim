@@ -15,6 +15,13 @@ nnoremap <tab> %
 vnoremap <tab> %
 nnoremap ' `
 
+" sensible things
+nnoremap U <c-r>
+nnoremap Y y$
+
+" Default to improved EX mode
+nnoremap Q gQ
+
 " indent with arrow keys
 nnoremap <left> <<
 nnoremap <right> >>

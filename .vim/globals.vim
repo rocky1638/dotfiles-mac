@@ -14,7 +14,7 @@ let g:ale_lint_on_text_changed=1
    \ }
 
   let g:ale_fixers = {
-   \ 'javascript': ['eslint'],
+   \ 'javascript': ['eslint', 'prettier'],
    \ 'graphql': ['prettier'],
    \ 'python': ['autopep8'],
    \ }
