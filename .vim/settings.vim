@@ -59,6 +59,8 @@ set undodir="~/.undo"
 set keywordprg=:DD
 
 set keywordprg=:DD
-set tags=tags;/
+set tags^=./.git/tags;
+
+set formatoptions-=t
 
 let mapleader=","

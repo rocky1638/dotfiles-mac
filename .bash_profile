@@ -54,6 +54,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 PATH="${HOME}/.scripts:${PATH}"
 PATH="/usr/local/bin:${PATH}"
 PATH="$HOME/Library/Python/3.7/bin:${PATH}"
+PATH="/usr/local/go/bin:${PATH}"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$/Users/rockzhou/workstation/google-cloud-sdk/path.bash.inc' ]; then . '/Users/rockzhou/workstation/google-cloud-sdk/path.zsh.inc'; fi

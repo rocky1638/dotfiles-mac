@@ -60,7 +60,8 @@ export SPACESHIP_PROMPT_ORDER=(
 #export SPACESHIP_RPROMPT_ORDER=(
   #time          # Time stamps section
 #)
-antigen theme denysdovhan/spaceship-prompt
+#antigen theme denysdovhan/spaceship-prompt
+#antigen theme starship/starship
 
 # apply everything
 antigen apply
@@ -70,3 +71,4 @@ alias zmv="zmv -n"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 eval "$(direnv hook zsh)"
+eval "$(starship init zsh)"

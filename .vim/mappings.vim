@@ -74,7 +74,8 @@ nnoremap gdl :diffget //3<CR>
 
 " LEADER COMMANDS
 nnoremap <leader><space> :nohlsearch<CR>
-nnoremap <leader>t :TableFormat<CR>
+"nnoremap <leader>t :TableFormat<CR>
+nnoremap <silent> <Leader>t :TagbarToggle<CR>
 nnoremap <leader>m :MarkdownPreview<CR>
 nnoremap <leader>f :Find 
 nnoremap <leader>s :Scratch<CR>

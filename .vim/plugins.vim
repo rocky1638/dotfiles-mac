@@ -59,5 +59,6 @@ Plugin 'sheerun/vim-polyglot' " downloads a bunch of language info
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'romainl/vim-devdocs'
 Plugin 'yuttie/comfortable-motion.vim' " comfortable scrolling
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
