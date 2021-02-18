@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# Setup a work space called `work` with two windows
+# first window has 2 panes. 
+# first window has 80/20 horizontal split with vim and terminal open with provided directory
+# second window is a scratch just at normal terminal
+#
+session="meridio"
+
+# set up tmux
+TERM=xterm-256color tmux start-server
+
+# create a new tmux session, starting vim from a saved session in the new window
+tmux new-session -d -s $session -n vim #"vim -S ~/.vim/sessions/kittybusiness"
+
+# Select pane 1, set dir to api, run vim
+tmux selectp -t 1 
+tmux send-keys "$1;c;vi" C-m
+
+# Split pane 1 horizontal by 65%, start redis-server
+tmux splitw -v -p 20
+tmux send-keys "$1;c" C-m
+
+# Select pane 1
+tmux selectp -t 1
+
+# create a new window called scratch
+tmux new-window -t $session:1 -n scratch
+
+# return to main vim window
+tmux select-window -t $session:0
+
+# Finished setup, attach to the tmux session!
+tmux attach-session -t $session

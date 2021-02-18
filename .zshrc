@@ -9,12 +9,12 @@ antigen bundle heroku
 antigen bundle lein
 antigen bundle command-not-found
 
-# syntax highlighting
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle "greymd/docker-zsh-completion"
-
 # vi highlighting
 antigen bundle vi-mode
+
+# syntax highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle greymd/docker-zsh-completion
 
 # theme
 export SPACESHIP_BATTERY_THRESHOLD=40
@@ -69,6 +69,15 @@ antigen apply
 autoload zmv
 alias zmv="zmv -n"
 
+# installation for rupa/z
+. $HOME/.scripts/z.sh
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
+
+export YVM_DIR=/Users/rockzhou/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

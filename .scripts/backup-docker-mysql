@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+### Arguments
+# $1: Docker Container ID of Database
+# $2: Name of database in container
+
+docker exec $1 /usr/bin/mysqldump -u root --password=root $2 > backup.sql

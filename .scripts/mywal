@@ -1,0 +1,2 @@
+wal -n -i $1 -o wal2iterm
+cd ~/.cache/wal/itermcolors

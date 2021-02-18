@@ -1,0 +1,1 @@
+/bin/cat $1 | pbcopy
