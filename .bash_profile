@@ -89,7 +89,6 @@ export YVM_DIR=/Users/rockzhou/.yvm
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export NPM_TOKEN=e312d091-ab2c-47df-ad6d-12d4e2e77fa4
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
